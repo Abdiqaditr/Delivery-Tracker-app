@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Mohamed"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="#FF4444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Menu Items -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <!-- My Account -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/user" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="My Account" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <!-- Address -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/address" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="Address" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <!-- Your Favorites -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/favorite" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="Your Favorites" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <!-- Order History -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/order" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="Order History" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <!-- Settings -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/setting" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="Settings" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <!-- Help Center -->
+            <LinearLayout style="@style/ProfileMenuItem">
+
+                <FrameLayout
+                    style="@style/ProfileMenuIcon"
+                    android:background="@drawable/circle_background">
+
+                    <ImageView
+                        style="@style/ProfileMenuIconImage"
+                        android:src="@drawable/help" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/ProfileMenuText"
+                    android:text="Help Center" />
+
+                <ImageView
+                    style="@style/ProfileMenuArrow"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
